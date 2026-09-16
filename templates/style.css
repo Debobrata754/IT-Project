@@ -1,0 +1,30 @@
+body{
+   background-color: rgb(252, 243, 239);
+}
+#head_part{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 82, 0);
+    color: rgb(252, 243, 239);
+}
+#main{
+    color: rgb(145, 82, 0);
+    width: 1vm;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: rgb(110, 63, 0); 
+    color: rgb(252, 243, 239);
+    font-size: 15px;
+    width: 85px;
+    border-radius: 5px;
+}
+#register{
+    display: flex;
+    justify-content: center;
+}
+
