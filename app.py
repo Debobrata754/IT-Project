@@ -8,11 +8,20 @@ def home():
 
 @app.route("/register", methods=["POST"])
 def register():
-    name = request.form["name"]
+    first_name = request.form["first_name"]
+    last_name = request.form["last_name"]
+    student_id = request.form["student_id"]
+    date_of_birth = request.form["date_of_birth"]
     email = request.form["email"]
     password = request.form["password"]
 
-    return f"Registration successful! Welcome, {name}."
+    return f"""
+    <h1>Registration Successful!</h1>
+    <p>Welcome, {first_name} {last_name}!</p>
+    <p>Student ID: {student_id}</p>
+    <p>Date of Birth: {date_of_birth}</p>
+    <p>Email: {email}</p>
+    """
 
 if __name__ == "__main__":
     app.run(debug=True)
