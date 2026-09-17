@@ -13,7 +13,6 @@ def register():
     student_id = request.form["student_id"]
     date_of_birth = request.form["date_of_birth"]
     email = request.form["email"]
-    password = request.form["password"]
 
     return f"""
     <h1>Registration Successful!</h1>
