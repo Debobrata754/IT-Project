@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(252, 243, 239);
+    font-size: 20px;
+}
+
+h3 {
+    color: rgb(171, 97, 1);
+}
+
+label {
+    margin-right: 5px;
+}
+
+input {
+    height: 20px;
+    font-size: 15px;
+}
+
+input[type="radio"] {
+    vertical-align: top;
+}
+
+input[name="first_name"],
+input[name="middle_name"] {
+    margin-right: 7px;
+}
+
+button {
+    background-color: rgb(110, 63, 0);
+    color: rgb(252, 243, 239);
+    font-size: 22px;
+    width: 110px;
+    border-radius: 5px;
+}
+
+#head_part {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(171, 97, 1);
+    color: rgb(252, 243, 239);
+}
+
+#main {
+    width: 1vm;
+    margin-top: 10px;
+}
+
+#phone,
+#year-label,
+#gender {
+    margin-left: 50px;
+}
+
+#email-label, 
+#blood-label,
+#disability-label {
+    margin-left: 10px;
+}
+
+#email {
+    width: 200px;
+}
+
+#year,
+#state {
+    width: 100px;
+    height: 25px;
+}
+
+#registerBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.common {
+    margin-top: -15px;
+    border-bottom: 2px solid rgb(145, 82, 0);
+}
+
+#address {
+    margin-top: -20px;
+    border-bottom: none;
+}
+
+.photo-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
