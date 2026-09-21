@@ -1,10 +1,30 @@
 body {
-    background-color: rgb(252, 243, 239);
+    background-color: rgb(216, 233, 233);
     font-size: 20px;
 }
 
 h3 {
-    color: rgb(145, 82, 0);
+    color: rgb(15, 101, 101);
+}
+
+#st {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    border-bottom: 2px solid rgb(2, 126, 126);
+}
+
+#student {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#photo-upload {
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
@@ -12,7 +32,7 @@ label {
 }
 
 input {
-    height: 20px;
+    height: 22px;
     font-size: 15px;
 }
 
@@ -22,11 +42,10 @@ input[type="radio"] {
 
 input[name="first_name"],
 input[name="middle_name"] {
-    margin-right: 7px;
+    margin-right: 12px;
 }
 
 button {
-    background-color: rgb(110, 63, 0);
     color: rgb(252, 243, 239);
     font-size: 22px;
     width: 110px;
@@ -38,21 +57,34 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(145, 82, 0);
+    background-color: rgb(2, 126, 126);
     color: rgb(252, 243, 239);
 }
 
 #main {
-    width: 1vm;
     margin-top: 10px;
 }
 
 #phone,
+#dob,
+#adhaarS,
+#bloodGr,
+#occupation,
 #year-label,
-#gender,
-#email-label,
-#disability {
-    margin-left: 50px;
+#city-label,
+#street-label,
+#pin-label,
+#class10-marks-label,
+#class12-marks-label,
+#course-label,
+#semester-label {
+    margin-left: 60px;
+}
+
+#occupation,
+#contactP,
+#adhaar {
+    margin-left: 10px
 }
 
 #email {
@@ -60,11 +92,14 @@ button {
 }
 
 #year,
-#state {
-    width: 100px;
+#state{
+    width: 120px;
     height: 25px;
 }
-
+#blood_group,#semester{
+    width: 140px;
+    height: 28px;
+}
 #registerBtn {
     display: flex;
     justify-content: center;
@@ -72,10 +107,164 @@ button {
 
 .common {
     margin-top: -15px;
-    border-bottom: 2px solid rgb(145, 82, 0);
+    border-bottom: 2px solid rgb(2, 126, 126);
 }
 
-#address {
-    margin-top: -20px;
-    border-bottom: none;
+#photo-upload {
+    width: 20%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.photo-label {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.photo-box {
+    width: 135px;
+    height: 155px;
+    background-color: #f8f8f8;
+    border: 2px dashed rgb(2, 126, 126);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#photoText {
+    font-size: 16px;
+    color: #777;
+}
+
+#photoPreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+#fileName {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.choose-button {
+    background-color: rgb(1, 90, 90);
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#photo {
+    display: none;
+}
+
+.upload-info {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #444;
+}
+
+#signature-upload {
+    width: 30%;
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.signature-label {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.photo-label span,.signature-label span {
+    color: red;
+}
+
+.signature-box {
+    width: 185px;
+    height: 45px;
+
+    border: 2px dashed rgb(2, 126, 126);
+    border-radius: 8px;
+
+    background-color: #f8f8f8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#signatureText {
+    font-size: 16px;
+    color: #777;
+}
+
+#signaturePreview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+#signatureFileName {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.signature-button {
+    background-color: rgb(145, 82, 0);
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#signature {
+    display: none;
+}
+
+.signature-info {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #444;
+    white-space: nowrap;
+}
+
+input[name="address"] {
+    width: 550px;
+}
+
+#choose-button {
+
+    background-color: rgb(2, 126, 126);
+
+}
+.acknowledgement{
+    margin-top: 10px;
+}
+
